@@ -33,11 +33,11 @@ const Header = () => {
         </Link>
         
         <nav style={{ display: 'flex', gap: '2rem' }} className="desktop-nav">
-          <a href="/#about" style={{ transition: 'color 0.3s' }}>О студии</a>
-          <a href="/#portfolio">Проекты</a>
-          <a href="/#services">Услуги</a>
-          <a href="/#workflow">Этапы</a>
-          <a href="/#contact">Контакты</a>
+          <a href={`${import.meta.env.BASE_URL}#about`} style={{ transition: 'color 0.3s' }}>О студии</a>
+          <a href={`${import.meta.env.BASE_URL}#portfolio`}>Проекты</a>
+          <a href={`${import.meta.env.BASE_URL}#services`}>Услуги</a>
+          <a href={`${import.meta.env.BASE_URL}#workflow`}>Этапы</a>
+          <a href={`${import.meta.env.BASE_URL}#contact`}>Контакты</a>
         </nav>
         
         <button className="btn-primary header-btn" style={{ padding: '0.8rem 1.5rem', fontSize: '0.9rem' }}>
@@ -55,11 +55,11 @@ const Header = () => {
 
       {isMobileMenuOpen && (
         <nav className="mobile-menu">
-          <a href="/#about" onClick={closeMenu}>О студии</a>
-          <a href="/#portfolio" onClick={closeMenu}>Проекты</a>
-          <a href="/#services" onClick={closeMenu}>Услуги</a>
-          <a href="/#workflow" onClick={closeMenu}>Этапы</a>
-          <a href="/#contact" onClick={closeMenu}>Контакты</a>
+          <a href={`${import.meta.env.BASE_URL}#about`} onClick={closeMenu}>О студии</a>
+          <a href={`${import.meta.env.BASE_URL}#portfolio`} onClick={closeMenu}>Проекты</a>
+          <a href={`${import.meta.env.BASE_URL}#services`} onClick={closeMenu}>Услуги</a>
+          <a href={`${import.meta.env.BASE_URL}#workflow`} onClick={closeMenu}>Этапы</a>
+          <a href={`${import.meta.env.BASE_URL}#contact`} onClick={closeMenu}>Контакты</a>
           <button className="btn-primary" style={{ marginTop: '1rem', width: 'fit-content' }} onClick={closeMenu}>
             Обсудить проект
           </button>
