@@ -263,6 +263,9 @@ ul {
 
 /* Media Queries for Mobile/Tablet */
 @media (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
   .responsive-grid-2 {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -279,6 +282,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
   .container {
     padding: 0 1rem;
   }
@@ -355,5 +361,33 @@ ul {
   .modal-content {
     width: 95%;
     padding: 1.5rem !important;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-primary:active {
+    background-color: var(--accent-hover);
+    transform: scale(0.98) !important;
+  }
+  
+  .btn-secondary:active {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.98) !important;
+  }
+
+  /* Make sure inputs don't zoom on iOS */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Improve tap targets */
+  button, a {
+    min-height: 44px;
   }
 }

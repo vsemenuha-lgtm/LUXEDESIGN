@@ -34,14 +34,15 @@ const Portfolio = () => {
               style={{ position: 'relative', overflow: 'hidden', borderRadius: '12px', cursor: 'pointer', display: 'block' }}
             >
               <img 
+                className="portfolio-img"
                 src={project.image} 
                 alt={project.title} 
-                style={{ width: '100%', height: '550px', objectFit: 'cover', transition: 'transform 0.5s', ':hover': { transform: 'scale(1.05)' } }} 
+                style={{ width: '100%', height: 'auto', aspectRatio: '4/5', objectFit: 'cover', transition: 'transform 0.5s' }} 
               />
-              <div style={{
+              <div className="portfolio-info" style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0,
-                background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
-                padding: '2.5rem 2rem',
+                background: 'linear-gradient(transparent, rgba(0,0,0,0.9))',
+                padding: '3rem 2rem 2rem 2rem',
                 color: 'white'
               }}>
                 <h3 style={{ fontSize: '2.2rem', marginBottom: '0.5rem' }}>{project.title}</h3>
