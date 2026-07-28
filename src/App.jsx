@@ -31,7 +31,7 @@ function ScrollObserver() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/LUXEDESIGN">
       <ScrollObserver />
       <Routes>
         <Route path="/" element={<Home />} />
