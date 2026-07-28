@@ -28,7 +28,7 @@ const Header = () => {
       borderBottom: isScrolled ? '1px solid rgba(255,255,255,0.05)' : 'none'
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-heading)', textDecoration: 'none', zIndex: 1001 }}>
+        <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-heading)', textDecoration: 'none', zIndex: 1001 }}>
           LUXE<span style={{ color: 'var(--accent-color)' }}>DESIGN</span>
         </Link>
         
