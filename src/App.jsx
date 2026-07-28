@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectDetails from './pages/ProjectDetails';
 
@@ -31,7 +31,7 @@ function ScrollObserver() {
 
 function App() {
   return (
-    <Router basename="/LUXEDESIGN">
+    <Router>
       <ScrollObserver />
       <Routes>
         <Route path="/" element={<Home />} />
