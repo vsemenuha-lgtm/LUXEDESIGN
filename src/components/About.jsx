@@ -33,14 +33,14 @@ const About = () => {
           </div>
           
           <div style={{ position: 'relative' }}>
-            <div className="glass" style={{ padding: '1rem', position: 'absolute', bottom: '-2rem', left: '-2rem', zIndex: 2 }}>
+            <div className="glass architect-card">
               <p style={{ fontWeight: 'bold' }}>Елена Смирнова</p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Главный архитектор</p>
             </div>
             <img 
               src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80" 
               alt="Интерьер" 
-              style={{ width: '100%', borderRadius: '12px', objectFit: 'cover', height: '600px' }} 
+              className="about-image"
             />
           </div>
         </div>
