@@ -35,6 +35,7 @@ const Portfolio = () => {
             >
               <img 
                 className="portfolio-img"
+                loading="lazy"
                 src={project.image} 
                 alt={project.title} 
                 style={{ width: '100%', height: 'auto', aspectRatio: '4/5', objectFit: 'cover', transition: 'transform 0.5s' }} 
