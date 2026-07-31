@@ -74,8 +74,18 @@ const Hero = () => {
           Премиальный дизайн интерьера и ремонт под ключ в Украине. Мы превращаем ваши мечты в безупречную реальность с вниманием к каждой детали.
         </p>
         <div className="responsive-flex">
-          <a href={`${import.meta.env.BASE_URL || ''}#portfolio`} className="btn-primary" style={{ textAlign: 'center' }}>Смотреть проекты</a>
-          <a href={`${import.meta.env.BASE_URL || ''}#quiz`} className="btn-secondary" style={{ textAlign: 'center' }}>Рассчитать стоимость</a>
+          <button 
+            onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })} 
+            className="btn-primary"
+          >
+            Смотреть проекты
+          </button>
+          <button 
+            onClick={() => document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' })} 
+            className="btn-secondary"
+          >
+            Рассчитать стоимость
+          </button>
         </div>
       </div>
     </section>
