@@ -103,7 +103,7 @@ const Quiz = () => {
   };
 
   return (
-    <section className="section" style={{ backgroundColor: 'var(--accent-color)', color: '#111' }}>
+    <section id="quiz" className="section" style={{ backgroundColor: 'var(--accent-color)', color: '#111' }}>
       <div className="container fade-in" style={{ textAlign: 'center' }}>
         <h2 className="heading-section" style={{ marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Узнайте стоимость вашего проекта</h2>
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Пройдите короткий тест за 1 минуту и получите предварительную смету.</p>

@@ -60,11 +60,11 @@ const Hero = () => {
           maxWidth: '600px',
           marginBottom: '3rem'
         }}>
-          Премиальный дизайн интерьера и ремонт под ключ в Москве. Мы превращаем ваши мечты в безупречную реальность с вниманием к каждой детали.
+          Премиальный дизайн интерьера и ремонт под ключ в Украине. Мы превращаем ваши мечты в безупречную реальность с вниманием к каждой детали.
         </p>
         <div className="responsive-flex">
-          <button className="btn-primary">Смотреть проекты</button>
-          <button className="btn-secondary">Рассчитать стоимость</button>
+          <a href={`${import.meta.env.BASE_URL || ''}#portfolio`} className="btn-primary" style={{ textAlign: 'center' }}>Смотреть проекты</a>
+          <a href={`${import.meta.env.BASE_URL || ''}#quiz`} className="btn-secondary" style={{ textAlign: 'center' }}>Рассчитать стоимость</a>
         </div>
       </div>
     </section>
