@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import bgVideo from '../assets/bg-video.mp4';
-import heroPoster from '../assets/hero.png';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -37,7 +36,6 @@ const Hero = () => {
         defaultMuted
         playsInline
         webkit-playsinline="true"
-        poster={heroPoster}
         onTimeUpdate={handleTimeUpdate}
         style={{
           position: 'absolute',
