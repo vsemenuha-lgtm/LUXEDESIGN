@@ -1,13 +1,23 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import bgVideo from '../assets/bg-video.mp4';
+import heroPoster from '../assets/hero.png';
 
 const Hero = () => {
   const videoRef = useRef(null);
 
+  useEffect(() => {
+    // Attempt to force play on mount for mobile browsers
+    if (videoRef.current) {
+      videoRef.current.play().catch((e) => {
+        console.log("Autoplay prevented:", e);
+      });
+    }
+  }, []);
+
   const handleTimeUpdate = () => {
     if (videoRef.current && videoRef.current.currentTime >= 5) {
       videoRef.current.currentTime = 0;
-      videoRef.current.play();
+      videoRef.current.play().catch(e => console.log(e));
     }
   };
 
@@ -24,7 +34,10 @@ const Hero = () => {
         autoPlay 
         loop 
         muted 
+        defaultMuted
         playsInline
+        webkit-playsinline="true"
+        poster={heroPoster}
         onTimeUpdate={handleTimeUpdate}
         style={{
           position: 'absolute',
