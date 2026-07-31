@@ -19,6 +19,8 @@
 
 html {
   font-size: 18px; /* Increases global rem size */
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Accounts for fixed header */
 }
 
 body {
